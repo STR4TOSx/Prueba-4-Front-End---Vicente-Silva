@@ -1,0 +1,43 @@
+/* Estilos para el contenedor principal de la Pokédex */
+.pokedex-container {
+    background-color: #dc3545; /* Color de fondo rojo */
+    color: white; /* Texto en blanco para contraste */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para el título y texto de la Pokédex */
+.pokedex-title, .pokedex-text {
+    color: white; /* Asegura que el título y el texto sean blancos */
+}
+
+/* Estilos para el campo de entrada de búsqueda */
+.pokedex-container .form-control {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+}
+
+/* Estilos para el botón de búsqueda */
+.pokedex-container .btn-light {
+    background-color: white;
+    color: #dc3545; /* Color del texto igual al fondo del contenedor */
+    border: none;
+}
+
+/* Efecto hover para el botón de búsqueda */
+.pokedex-container .btn-light:hover {
+    background-color: #f8f9fa; /* Gris muy claro al pasar el mouse */
+    color: #dc3545;
+}
+
+/* Estilos para la tarjeta que muestra la información del Pokémon */
+.pokedex-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    color: #333; /* Texto oscuro para mejor lectura */
+}
+
+/* Estilos para los mensajes de alerta de error */
+.pokedex-container .alert-danger {
+    background-color: #f8d7da; /* Fondo rosa claro para alertas de error */
+    color: #721c24; /* Texto rojo oscuro */
+    border-color: #f5c6cb; /* Borde rosa */
+}

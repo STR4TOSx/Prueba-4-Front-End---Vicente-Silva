@@ -1,0 +1,124 @@
+/* Estilos globales para el body */
+body {
+  min-width: 100vw;
+  overflow-x: hidden; /* Previene el scroll horizontal */
+}
+
+/* Estilos compartidos para la barra de navegación y el footer */
+.custom-nav, .custom-footer {
+  background-color: #0f1188 !important; /* Azul oscuro */
+  width: 100vw !important;
+  max-width: 100% !important;
+  color: white !important;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* Estilos específicos para la barra de navegación */
+.custom-nav {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.custom-brand {
+  display: flex;
+  align-items: center;
+}
+
+.custom-logo {
+  height: 40px;
+  width: auto;
+  max-height: 100%;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: flex-start; /* Alinea los elementos del nav a la izquierda */
+}
+
+.navbar-nav .nav-link {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+/* Estilos específicos para el footer */
+.custom-footer {
+  margin-top: auto; /* Empuja el footer al fondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-footer .container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para el header */
+.custom-header {
+  padding: 20px 0;
+  background-color: #f8f9fa; /* Gris claro */
+}
+
+/* Estilos compartidos para imágenes en el header y secciones */
+.header-image, .section-image {
+  width: 480px;
+  height: 270px;
+  max-width: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+/* Media queries para diseño responsive */
+@media (min-width: 992px) {
+  .custom-nav, .custom-footer {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+  }
+  
+  .custom-logo {
+    height: 60px; /* Logo más grande en pantallas grandes */
+  }
+
+  .right-image-col {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .custom-brand {
+    margin-bottom: 1rem;
+  }
+
+  .navbar-toggler {
+    margin-right: auto;
+  }
+
+  .header-image {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header-image {
+    width: 400px;
+    height: 225px; /* Ajusta el tamaño de la imagen para pantallas medianas */
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-header .container {
+    max-width: 1140px; /* Limita el ancho máximo en pantallas muy grandes */
+  }
+}
+
+@media (max-width: 767px) {
+  .section-image {
+    margin-bottom: 20px;
+  }
+}
